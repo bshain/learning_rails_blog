@@ -1,0 +1,15 @@
+<h1>New Entry</h1>
+
+<%= form_for :post, url: entries_path do |f| %>
+	<p>
+		<%= f.label :name %><br>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :words %><br>
+		<%= f.text_area	:words %>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>
